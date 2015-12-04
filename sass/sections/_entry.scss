@@ -1,0 +1,145 @@
+/*---------------------------------------------------------
+ * Entry
+---------------------------------------------------------*/
+.entry-header h1 {
+    text-align: center;
+}
+.maps_page {
+    .entry {
+        margin: 3em 0;
+        p {
+            margin: 0 auto 1.5em auto;
+        }
+    }
+}
+.locations_page {
+    .entry__wrapper {
+        width: 1022px;
+        margin: 0 auto;
+    }
+    .entry,
+    .body__aside {
+        float: left;
+    }
+    .entry {
+        width: 720px;
+        margin-bottom: 2em;
+    }
+    .maps__meta {
+        &> div {
+            margin-bottom: 1.5em;
+        }
+        h2 {
+            @include font-size(16);
+        }
+        h2,
+        span {
+            display: inline;
+        }
+    }
+    .body__aside {
+        width: 300px;
+        padding-left: 1em;
+        a {
+            display: block;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #b6b5b3;
+            background-color: $light-green;
+        }
+        .aside__image {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.tax__header {
+    position: relative;
+    h2 {
+        @include font-size(18);
+        color: $color__link;
+    }
+    a {
+        position: absolute;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+    }
+    p {
+        margin-bottom: 0.25em;
+        margin-top: 0.25em;
+    }
+}
+.archive {
+    article {
+        margin-bottom: 2em;
+    }
+}
+.breadcrumbs { 
+    list-style: none; 
+    overflow: hidden; 
+    margin-bottom: 3em;
+}
+.breadcrumbs ul { 
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.breadcrumbs li { 
+    float: left; 
+    list-style-type: none;
+}
+.breadcrumbs li a {
+    color: white;
+    text-decoration: none; 
+    padding: 10px 10px 10px 47px;
+    background: $dark-grey;
+    position: relative; 
+    display: block;
+    float: left;
+    font-weight: bold;
+}
+.breadcrumbs li a:after { 
+    content: " "; 
+    display: block; 
+    width: 0; 
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid $light-pink;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px; 
+    left: 100%;
+    z-index: 2; 
+}
+.breadcrumbs li a:before { 
+    content: " "; 
+    display: block; 
+    width: 0; 
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid $dark-grey;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px; 
+    right: -29px;
+    z-index: 3; 
+}
+.tax__list {
+    width: 1022px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    .entry__title {
+        margin-top: 0;
+        @include font-size(16);
+    }
+    a {
+        text-decoration: none;
+    }
+}

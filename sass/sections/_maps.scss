@@ -1,0 +1,161 @@
+/*---------------------------------------------------------
+ * Maps
+---------------------------------------------------------*/
+.map {
+    height: 850px;
+    margin: 0 auto;
+    border: 1px solid $dark-grey;
+    box-shadow: 1px 1px 4px $dark-grey;
+    position: relative;
+    overflow: hidden;
+}
+.map__image {
+    height: 848px;
+    position: relative;
+    z-index: 1;
+}
+.polygon,
+.old-map {
+    position: absolute;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+.polygon {
+    position: absolute;
+    transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+        z-index: 1000 !important;
+    }
+}
+.maps__info {
+    margin-bottom: 3em;
+    overflow: hidden;
+    clear: both;
+    width: 1022px;
+    margin: 0 auto;
+    .cats {
+
+    }
+}
+.map__info--one-third {
+    width: 31%;
+    margin-right: 2%;
+    margin-bottom: 2em;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    .color {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        position: relative;
+        top: 4px;
+        margin-right: 4px;
+        &.first-wave {
+            background-color: #f7941e;
+        }
+        &.second-wave {
+            background-color: #ffd105;
+        }
+        &.war-years {
+            background-color: #83cfcc;
+        }
+        &.post-war {
+            background-color: #00c1f3;
+        }
+        &.present {
+            background-color: #00c1f3;
+        }
+    }
+    .cat {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        position: relative;
+        top: 4px;
+        margin-right: 4px;
+        background-size: 25px 25px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        &.business {
+            background-image: url(images/markers/icon-biz.png);
+        }
+        &.education {
+            background-image: url(images/markers/icon-edu.png);
+        }
+        &.food {
+            background-image: url(images/markers/icon-food.png);
+        }
+        &.organization {
+            background-image: url(images/markers/icon-org.png);
+        }
+        &.ritual {
+            background-image: url(images/markers/icon-rit.png);
+        }
+    }
+}
+.map__info--one-third.last {
+    margin-right: 0;
+}
+.map__info--one-third ul {
+    list-style-type: none;
+    padding: 0;
+}
+.map__info--one-third ul li{
+    list-style-type: none;
+    line-height: 1.5em;
+}
+.map__buttons {
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+}
+a.toggle_maps {
+    display: inline-block;
+    background-color: $dark-grey;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border: 1px solid $dark-grey;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    float: left;
+    &:hover {
+        transition: color 0.3s ease, background-color 0.3s ease;
+        background-color: $light-green;
+        color: $dark-grey;
+    }
+    &.instructions {
+        float: right;
+    }
+}
+.maps__description,
+.maps__page-intro{
+    margin-top: 3em;
+}
+.maps__intro {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 1000;
+    background-color: #fff;
+    width: 400px;
+    padding: 1em;
+    box-shadow: 1px 1px 4px $dark-grey;
+    .close {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 1em;
+    }
+}

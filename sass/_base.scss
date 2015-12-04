@@ -1,0 +1,25 @@
+/*---------------------------------------------------------
+ * Base
+---------------------------------------------------------*/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+body {
+	@include font-size($font-size__base);
+    background-color: $light-pink;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+p {
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+}
+.cjhsmp_show {
+    display: block;
+}
+.cjhsmp_hide {
+    display: none;
+}

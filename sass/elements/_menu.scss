@@ -1,0 +1,60 @@
+/*---------------------------------------------------------
+ * Menu
+---------------------------------------------------------*/
+.header__menu {
+	height: 43px;
+	background-color: $dark-grey;
+	position: relative;
+	z-index: 10;
+}
+.primary__menu {
+	padding: 0 2em;
+}
+.sm {
+	overflow: hidden;
+	height: 43px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	@include font-size(18);
+	li {
+		float: left;
+		height: 43px;
+		margin-right: 2em;
+		a {
+			display: block;
+			text-decoration: none;
+			color: #fff;
+		    transition: color 0.4s ease;
+		    padding: 12px 0 13px;
+		    &:hover {
+		    	transition: color 0.4s ease;
+		    	color: #333;
+		    }
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	ul {
+		display: none;
+		position: absolute;
+		top: 43px;
+		left: -6px;
+		list-style-type: none;
+		padding: 0 2em 0 2em;
+		background-image: url(images/teal.png);
+	    background-color: transparent;
+	    background-repeat: repeat;
+		a {
+			text-decoration: none;
+			color: #333;
+		    transition: color 0.4s ease;
+		    padding: 11px 0 14px;
+		    &:hover {
+		    	transition: color 0.4s ease;
+		    	color: #fff;
+		    }
+		}
+	}
+}

@@ -1,0 +1,62 @@
+/*---------------------------------------------------------
+ * Footer
+---------------------------------------------------------*/
+.body__footer {
+    bottom: 0px;
+    padding: 3em 2em;
+    background-color: $dark-grey;
+    color: #fff;
+    @include font-size(14);
+    a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.4s ease;
+        &:last-child {
+            border: none;
+        }
+        &:hover {
+            transition: color 0.4s ease;
+            color: #333;
+        }
+    }
+    .footer__info {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        line-height: normal;
+        @include hor-list-pos(center);
+        margin-top: 1em;
+        @include font-size(14);
+        li {
+            padding: 0 1em;
+            line-height: 0.9em;
+        }
+        li,
+        address {
+            position: relative;
+            float: none;
+            display: inline-block;
+            border-right: 1px solid #fff;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        address {
+            font-style: normal;
+        }
+        a {
+            position: relative;
+            display: block;
+            white-space: nowrap;
+        }
+        &:after {
+            content: "\00a0";
+            display: block;
+            height: 0;
+            font: 0/0 serif;
+            clear: both;
+            visibility: hidden;
+            overflow: hidden;
+        }
+    }
+}

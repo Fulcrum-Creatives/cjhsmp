@@ -1,0 +1,26 @@
+/*---------------------------------------------------------
+ * Layout
+---------------------------------------------------------*/
+.body__content {
+  width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2em;
+}
+main.body__content{
+    overflow: hidden;
+    width: 1024px;
+    padding: 0;
+}
+.constrict {
+  article,
+  hr,
+  .entry__header {
+    width: 1022px;
+   margin: 0 auto;
+  }
+  .maps__info {
+    margin-top: 4em;
+  }
+}
